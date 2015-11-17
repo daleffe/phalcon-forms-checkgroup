@@ -24,7 +24,7 @@ class CheckGroup extends \Phalcon\Forms\Element
                 $checked = ($key == $this->getValue()) ? ' checked' : null;
             }
 
-            $html .= '<input type="checkbox" id="' . $this->getName() . $key . '" name="' . $this->getName() . '[]' . '" value="' . $value . '"' . $checked . ' /> ' . $value . ' ';
+            $html .= '<input type="checkbox" id="' . $this->getName() . $key . '" name="' . $this->getName() . '[]' . '" value="' . $key . '"' . $checked . ' /> ' . $value . ' ';
         }
 
         return $html;
