@@ -9,7 +9,7 @@ Update your composer.json with following options:
 	"repositories": [
 		{
 			"type": "vcs",
-			"url": "https://github.com/daleffe/phalcon-forms-radiogroup"
+			"url": "https://github.com/daleffe/phalcon-forms-checkgroup"
 		}
 	],
     "require": {
