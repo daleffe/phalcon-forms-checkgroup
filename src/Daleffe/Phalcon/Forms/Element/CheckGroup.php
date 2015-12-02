@@ -6,8 +6,6 @@ class CheckGroup extends \Phalcon\Forms\Element
 {
     public function render($attributes = [])
     {
-        //var_dump($this->getValue());
-
         $checked = null;
         $html = '';
 
