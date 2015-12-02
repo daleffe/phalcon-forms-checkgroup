@@ -6,6 +6,8 @@ class CheckGroup extends \Phalcon\Forms\Element
 {
     public function render($attributes = [])
     {
+        //var_dump($this->getValue());
+
         $checked = null;
         $html = '';
 
@@ -21,7 +23,7 @@ class CheckGroup extends \Phalcon\Forms\Element
             if (is_array($this->getValue())) {
                 $checked = (array_search($key, $this->getValue()) === false) ? null : ' checked';
             } else {
-                $checked = ($key == $this->getValue()) ? ' checked' : null;
+                $checked = ($key == $this->getValue() && !is_null($this->getValue())) ? ' checked' : null;
             }
 
             $html .= '<input type="checkbox" id="' . $this->getName() . $key . '" name="' . $this->getName() . '[]' . '" value="' . $key . '"' . $checked . ' /> ' . $value . ' ';
