@@ -46,6 +46,12 @@ if (!is_null($timezones)) {
 $this->add($weekdays);
 ```
 
+New attribute has been added to allow the break line every 'n' checkboxes, as shown below:
+```php
+$weekdays = new CheckGroup("weekdays", ['elements' => $weekdaysList, 'linebreakeach' => 4]);
+```
+
+
 So, in view use:
 ```php
 {{ form.render('weekdays') }}
