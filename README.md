@@ -40,7 +40,7 @@ if (!is_null($timezones)) {
 			$weekdaysSelected[] = $key;
 		}
 	}
-$weekdays->setDefault($weekdaysSelected);
+	$weekdays->setDefault($weekdaysSelected);
 }
 
 $this->add($weekdays);
