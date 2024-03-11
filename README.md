@@ -1,6 +1,6 @@
 # Phalcon Forms
 ## Check Group
-Phalcon Form element to group Check inputs.
+Phalcon (v4) Form element to group Check inputs.
 
 ### Installation
 Update your composer.json with following options:
